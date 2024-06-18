@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        .lcon {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, #87CEFA, #FF6347);
+        }
+        body {
+            background: linear-gradient(to right, #87CEFA, #FF6347);
+            margin: 0;
+            padding: 0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 80px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2E8B57;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 20px;
+            color: #2E8B57;
+        }
+        input {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #2E8B57;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #228B22;
+        }
+       /* .bcon {
+            padding: 0px;
+            display: flex;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .bcon h1 {
+            color: #2E8B57;
+            padding: 20px;
+            font-size: 40px;
+        }
+        .bcon p {
+            padding: 20px;
+            font-size: 30px;
+            margin-left: 400px;
+            font-family: cursive;
+        }
+        .bab p,
+        .bap p {
+            font-size: 30px;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="lcon">
+        <div class="login-container">
+            <h1>Signup</h1>
+            <form action="signup.jsp" method="post">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="s1" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="s2" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="s3" required>
+                <button type="submit">Signup</button>
+            </form>
+            Already have an account?  <a href="login.html">Login</a>
+        </div>
+    </div>
+</body>
+</html>
